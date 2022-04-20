@@ -178,3 +178,6 @@ def edit_issue(request, task_id):
     else:
         task_obj = Issued.objects.get(pk=task_id)
         return render(request, 'edit_issued.html', {'task_obj': task_obj})
+
+def welcome(request):
+    return Ht
